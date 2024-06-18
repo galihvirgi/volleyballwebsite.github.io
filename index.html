@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball Player Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section1">
+            <div class="text">
+                <h1>
+                    VOLLEYBALL <br>
+                    <span>WEBSITE</span>
+                </h1>
+            </div>
+            <div class="image">
+                <img src="img/Ran Takahashi.png" alt="">
+            </div>
+        </div>
+        <div class="section2">
+            <div class="form">
+                <form>
+                    <div class="form-section1">
+                        <div class="input">
+                            <label for="nama">Nama:</label>
+                            <input type="text" id="nama" placeholder="Masukkan nama">
+                        </div>
+                        <div class="input">
+                            <label for="date">Tanggal lahir:</label>
+                            <input type="date" id="date" placeholder="Masukkan Tanggal Lahir">
+                        </div>
+                        <div class="input">
+                            <label for="posisi">Posisi:</label>
+                            <select class="list" name="posisi" id="posisi">
+                                <option value="" disabled selected>Posisi</option>
+                                <option value="Setter">Setter</option>
+                                <option value="Spiker">Spiker</option>
+                                <option value="Libero">Libero</option>
+                                <option value="Server">Server</option>
+                                <option value="Blocker">Blocker</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-section2">
+                        <div class="input">
+                            <label for="tinggi badan">Tinggi badan:</label>
+                            <input type="number" id="tinggi-badan" placeholder="Masukkan tinggi badan(cm)">
+                        </div>
+                        <div class="input">
+                            <label for="berat badan">Berat badan:</label>
+                            <input type="number" id="berat-badan" placeholder="Masukkan berat badan(kg)">
+                        </div>
+                        <div class="form-button">
+                            <div class="button-tambah" id="button-tambah">
+                                <a href="">
+                                    <button id="btn-tambah" type="submit">Tambah</button> 
+                                </a>
+                            </div>
+                            <div class="button-cancel" id="button-cancel">
+                                <a href="">
+                                    <button id="btn-cancel" type="submit">Batal</button> 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="tampil">
+                <div class="action">
+                    <div class="search-container">
+                        <form action="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" name="search" id="search" placeholder="Cari Pemain">
+                        </form>
+                    </div>
+                    <div class="features">
+                        <div class="sort-buttons">
+                            <button id="sort-az" onclick="sort('a-z')">Sort A-Z</button>
+                            <button id="sort-za" onclick="sort('z-a')">Sort Z-A</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="list-pemain">
+                    <table class="head">
+                        <th>
+                            <tr>
+                                <td>Nama</td>
+                                <td>Tanggal Lahir</td>
+                                <td>Posisi</td>
+                                <td>Tinggi badan</td>
+                                <td>Berat badan</td>
+                                <td>Action  </td>
+                            </tr>
+                        </th>
+                    </table>
+                    <div class="table-wrapper" id="table-wrapper">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

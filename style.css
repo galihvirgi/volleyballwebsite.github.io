@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #010306;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .text{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.section1 .text h1{
+    color: #EDEFF0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+.section1 .text h1 span{
+    color: #B7AA7A;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+}
+.section1 .image{
+    padding: 0;
+}
+.section1 .image img{
+    width: 360px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.section2{
+    width: 100%;
+    padding: 10px;
+    padding-left: 100px;
+}
+.section2 .form form{
+    display: flex;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  
+}
+.form-section1{
+    background-color: transparent;
+    padding: 10px 30px;
+}
+.form-section2{
+    width: 100%;    
+    padding: 10px 30px;
+    background-color: transparent;
+}
+label{
+    color:#B7AA7A;
+    font-size: 14px;
+}
+input{
+    width: 364px;
+    color: white;
+    padding: 10px;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    color-scheme: dark;
+}
+select{
+    color: white;
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.form-button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+#btn-tambah{
+    background-color: #B7AA7A;
+    cursor: pointer;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 10px ;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+#btn-tambah:hover{
+    background-color: #917c30;
+}
+#btn-cancel{
+    background-color: #B55050;
+    cursor: pointer;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+#btn-cancel:hover{
+    background-color: #b43333;
+}
+.tampil{
+    background-color: transparent;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    width: auto;    
+    height: 370px;
+    padding: 10px 30px;
+}
+.tampil .action{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.search-container form{
+    display: flex;
+    width: 300px;
+    color: white;
+    padding: 10px;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+    outline: none;
+}
+.search-container form input{
+    border: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+}
+.search-container form i{
+    color: white;
+}
+.features{
+    display: flex;
+}
+.filter-container select{
+    color: white;
+    width: 150px;
+    padding: 9px;
+    margin: 5px 0 5px 10px;
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    outline: none;
+}
+.sort-buttons{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.sort-buttons button{
+    background-color: transparent;
+    border: 0.5px solid #B7AA7A;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.sort-buttons button:hover{
+    background-color: #B7AA7A;
+    color: black;
+}
+.list-pemain .head{
+    background-color: #B7AA7A;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    table-layout: fixed;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.list-pemain .head td{
+    background-color: #B7AA7A;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+.list-pemain .table-wrapper{
+    max-height: 250px;
+    overflow: auto;
+}
+.list-pemain .body{
+    border: 0.5px solid #B7AA7A;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.list-pemain .body i{
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb {
+    background: #B7AA7A; 
+}
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
