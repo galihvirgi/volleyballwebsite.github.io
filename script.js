@@ -207,6 +207,10 @@ const editItem = (id) => {
  * @param {number} id - ID pemain yang akan dihapus.
  */
 const hapusPemain = (id) => {
+    const confirmDelete = confirm("Anda yakin ingin menghapus data ini?")
+
+    if(!confirmDelete)
+    return
     listPemain = listPemain.filter(pemain => pemain.id !== id);
     clearSearchInput();
     simpanKeLocalStorage();
